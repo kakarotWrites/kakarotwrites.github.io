@@ -1,6 +1,6 @@
 title: "Rifat Al Jubayer"
 author: "Rifat Al Jubayer"
-description: "Kakarotsec <b style=\"color: #FFCC00;\">☠️</b>"
+description: "Kakarotsec <b>💀</b>"
 permalink: /:title/
 lang: "en"
 excerpt_separator: "\n\n\n"
@@ -18,7 +18,9 @@ minimal: false             # use a dark header
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {file: "index.html", title: Home}
+  - {file: "README.md", title: My CV, url: "https://kakarotsec.github.io"}
   - {file: "README.md", title: About Me, url: "https://kakarotsec.github.io"}
+
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: Mail, icon: envelope, url: "mailto:rifataljubaer2@gmail.com"}
