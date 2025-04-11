@@ -29,7 +29,7 @@ author:
   discord: https://s.id/dev-universe
 
 app:
-  theme: white
+  theme: dark
   navbar:
     - name: about
       url: /about
