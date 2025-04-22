@@ -41,37 +41,37 @@ app:
     #   url: /blogs
     # - name: urls
     #   url: /urls
-    - name: tags
-      url: /tags
+    #- name: tags
+     # url: /tags
     # - name: repos
       # url: repos
     #- name: info
     #  url: /info
     # - name: /external
     #   url: https://docs.ariaf.my.id
-  linktree:
-    active: true
-    groups:
-      - title: Linktree
-        items:
-          - name: WhatsApp
-            url: https://wa.me/qr/IFWCFCOO2P5HA1
+#  linktree:
+#    active: true
+ #   groups:
+ #     - title: Linktree
+ #       items:
+   #       - name: WhatsApp
+   #         url: https://wa.me/qr/IFWCFCOO2P5HA1
           # - name: GitHub
           #   url: https://github.com/ariafatah0711
-      - title: My Web
-        items:
-          - name: notes
-            url: https://ariaf.my.id/notes
-          - name: files
-            url: https://ariaf.my.id/files
-          - name: ctf
-            url: https://ctf.ariaf.my.id
+   #   - title: My Web
+    #    items:
+     #     - name: notes
+       #     url: https://ariaf.my.id/notes
+       #   - name: files
+         #   url: https://ariaf.my.id/files
+         # - name: ctf
+           # url: https://ctf.ariaf.my.id
   show_discord:
     active: True
     discord_id: 879547455941779456
     cacheTime: 15000
   toggle_song:
-    active: False
+    active: True
     song: assets/song/song.m4a
 
 # pwa (opsional)
