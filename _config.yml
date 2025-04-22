@@ -45,8 +45,8 @@ app:
       url: /tags
     # - name: repos
       # url: repos
-    - name: info
-      url: /info
+    #- name: info
+    #  url: /info
     # - name: /external
     #   url: https://docs.ariaf.my.id
   linktree:
