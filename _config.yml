@@ -3,15 +3,15 @@ site: kakarotwrites.github.io
 title: Rifat Al Jubayer 
 keywords: rifat blog
 description: >-
-  Portfolio and blog showcasing projects and academic achievements.
+  Portfolio and blog.
 lang: en-US
-timezone: Asia/Jakarta
+timezone: Asia/Dhaka
 repo: https://github.com/kakarotsec # site repo [optional]
 # google_verify:      XXX # Put your Google Verification here
 # google_analytics:   UA-XXXXXXXX-00 # Put your Google Analytics code
 # google_verify:      XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 # google_analytics:   UA-XXXXXXXX-00
-discus-identifier:  ariafatah0711
+#discus-identifier:  
 
 # Author settings
 author:
