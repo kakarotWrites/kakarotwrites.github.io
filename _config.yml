@@ -72,7 +72,7 @@ app:
     cacheTime: 15000
   toggle_song:
     active: True
-    song: assets/song/song.m4a
+    song: assets/song/you.mp3
 
 # pwa (opsional)
 # pwa:
