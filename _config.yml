@@ -34,7 +34,7 @@ app:
     - name: about
       url: /about
     - name: cv
-      url: https://google.com
+      url: https://kakarotsec.github.io/cv
     # - name: notes
     #   url: /notes
     # - name: blogs
