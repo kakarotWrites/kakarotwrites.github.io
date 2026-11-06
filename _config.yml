@@ -1,0 +1,19 @@
+title: Rifat Al Jubayer — Cybersecurity Researcher
+description: "Rifat Al Jubayer. Cybersecurity Researcher. Web Security & Development, Network Security & Exploits, DevSecOps & Automation."
+url: "https://kakarotwrites.github.io"
+baseurl: ""
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+author:
+  name: Rifat Al Jubayer
+  url: "https://kakarotwrites.github.io"
+image: "/assets/images/rifat-al-jubayer.jpg"
+favicon: "/assets/images/favicon.svg"
+collections:
+  projects:
+    output: false
+    permalink: /projects/:name/
+exclude:
+  - README.md

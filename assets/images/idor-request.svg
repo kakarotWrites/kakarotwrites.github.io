@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="420" viewBox="0 0 1000 420" role="img" aria-labelledby="title desc">
+  <title id="title">Illustration of an IDOR request</title>
+  <desc id="desc">A request for invoice 10234 receives a response for another customer.</desc>
+  <rect width="1000" height="420" fill="#0d141c"/>
+  <text x="40" y="58" fill="#3dff9a" font-family="monospace" font-size="24">GET /api/invoices/10234</text>
+  <text x="40" y="100" fill="#6b7f8f" font-family="monospace" font-size="18">Authorization: &lt;redacted&gt;</text>
+  <path d="M40 145H960" stroke="#1b2733" stroke-width="2"/>
+  <text x="40" y="205" fill="#ffb454" font-family="monospace" font-size="22">HTTP/1.1 200 OK</text>
+  <text x="40" y="248" fill="#c9d6df" font-family="monospace" font-size="18">{ "invoice_owner": "another-customer" }</text>
+  <text x="40" y="330" fill="#ff5c6c" font-family="monospace" font-size="20">Missing ownership check</text>
+</svg>

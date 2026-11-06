@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="420" viewBox="0 0 1000 420" role="img" aria-labelledby="title desc">
+  <title id="title">Illustration of a server-side request forgery flow</title>
+  <desc id="desc">An export service fetches an attacker-controlled internal URL.</desc>
+  <rect width="1000" height="420" fill="#0d141c"/>
+  <rect x="55" y="135" width="230" height="120" rx="8" fill="#16222b" stroke="#3dff9a"/>
+  <rect x="385" y="135" width="230" height="120" rx="8" fill="#16222b" stroke="#5cc8ff"/>
+  <rect x="715" y="135" width="230" height="120" rx="8" fill="#16222b" stroke="#ffb454"/>
+  <text x="105" y="190" fill="#c9d6df" font-family="monospace" font-size="21">attacker</text>
+  <text x="420" y="190" fill="#c9d6df" font-family="monospace" font-size="21">PDF exporter</text>
+  <text x="770" y="190" fill="#c9d6df" font-family="monospace" font-size="21">internal host</text>
+  <path d="M285 195H385M615 195H715" stroke="#3dff9a" stroke-width="4" marker-end="url(#arrow)"/>
+  <text x="50" y="330" fill="#ffb454" font-family="monospace" font-size="20">url=http://169.254.169.254/</text>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0L9 3L0 6Z" fill="#3dff9a"/></marker></defs>
+</svg>
