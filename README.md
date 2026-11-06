@@ -1,6 +1,12 @@
-# Personal Website
+# Rifat Al Jubayer — Jekyll Portfolio
 
-The source for [kakarotwrites.github.io](https://kakarotwrites.github.io/), a responsive Jekyll site for Rifat Al Jubayer's cybersecurity research, software projects, writeups, and CV.
+This repository contains the source for [kakarotwrites.github.io](https://kakarotwrites.github.io/), a responsive Jekyll portfolio for cybersecurity research, software projects, technical writeups, and a CV. It can also be forked and adapted as a starting point for your own GitHub Pages portfolio.
+
+## What this project is
+
+The site combines a terminal-inspired single-page homepage with Markdown-powered articles. It is designed for developers, security researchers, and technical writers who want a fast personal site that is easy to edit, responsive on phones, and deployable directly from GitHub.
+
+The included profile, CV, social links, statistics, images, and research content belong to the original author. Replace them before publishing a fork.
 
 ## What is included
 
@@ -96,6 +102,18 @@ To deploy:
 5. Wait for the Pages deployment to complete.
 
 Do not commit `_site/` or `.jekyll-cache/`; GitHub Pages builds the site from the source files.
+
+## Use this as your own site
+
+1. Fork this repository, or use **Use this template** if enabled.
+2. Rename the repository to `<your-username>.github.io` for a GitHub Pages user site.
+3. Replace the personal content in [`index.html`](./index.html), [`_posts/`](./_posts/), [`_projects/`](./_projects/), and [`Rifat_Al_Jubayer.pdf`](./Rifat_Al_Jubayer.pdf).
+4. Replace the profile image, article images, social URLs, and favicon in [`assets/images/`](./assets/images/).
+5. Update `url`, `author`, `description`, and `image` in [`_config.yml`](./_config.yml).
+6. Update the canonical, Open Graph, and structured-data URLs in [`index.html`](./index.html) if your URL differs.
+7. Enable GitHub Pages from the `main` branch and `/ (root)` directory.
+
+For a project repository rather than a user site, set `baseurl` in [`_config.yml`](./_config.yml) to `/<repository-name>` and keep links generated with Jekyll's `relative_url` filter.
 
 ## SEO
 
