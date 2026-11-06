@@ -1,4 +1,4 @@
-# Rifat Al Jubayer — Personal Website
+# Personal Website
 
 The source for [kakarotwrites.github.io](https://kakarotwrites.github.io/), a responsive Jekyll site for Rifat Al Jubayer's cybersecurity research, software projects, writeups, and CV.
 
