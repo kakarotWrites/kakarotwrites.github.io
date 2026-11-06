@@ -1,29 +1,119 @@
-# Kakarot security researcher site
+# Rifat Al Jubayer — Personal Website
 
-This is a GitHub Pages/Jekyll site. The configured production URL is `https://kakarotwrites.github.io/`. Upload the contents of this folder to the `kakarotwrites.github.io` repository and enable **Settings → Pages → Deploy from a branch** using the repository's default branch and `/ (root)` folder.
+The source for [kakarotwrites.github.io](https://kakarotwrites.github.io/), a responsive Jekyll site for Rifat Al Jubayer's cybersecurity research, software projects, writeups, and CV.
 
-For local development, install Ruby dependencies with `bundle install`, then run `bundle exec jekyll serve --livereload` and open `http://127.0.0.1:4000/`.
+## What is included
 
-The layout includes responsive viewport settings, fluid headings, flexible navigation, and images that scale to their container for phones, tablets, laptops, and desktop displays. Jekyll changes the way pages are generated, not the browser’s rendering engine.
+- Single-page portfolio navigation for About, Writeups, Projects, and CV
+- Markdown-based security writeups and project articles
+- Responsive layouts for desktop, tablet, and mobile screens
+- Terminal-inspired dark theme with optional light theme
+- Optional background music with browser-safe playback controls
+- Profile image, downloadable CV, favicon, and social links
+- SEO metadata, canonical URLs, Open Graph, Twitter cards, JSON-LD, sitemap, and robots.txt
 
-The optional background music is stored at [`assets/audio/theme.mp3`](./assets/audio/theme.mp3). It is off by default and only starts after the visitor presses the music button. Homepage section tabs use the original single-page navigation, so music continues while switching sections.
+## Project structure
 
-The site uses the original single-page experience in [`index.html`](./index.html) as its only public section interface:
+```text
+.
+├── _config.yml              # Jekyll and site configuration
+├── _layouts/                # Shared layouts for Markdown pages
+├── _posts/                  # Writeups and project articles
+├── _projects/               # Project source material
+├── assets/
+│   ├── audio/               # Optional background music
+│   └── images/              # Profile, favicon, and article images
+├── index.html               # Main portfolio page
+├── Rifat_Al_Jubayer.pdf     # Downloadable CV
+├── robots.txt               # Crawler instructions
+└── Gemfile                 # Ruby/Jekyll dependencies
+```
 
-- [`_posts/`](./_posts/) — organized Markdown writeup sources
-- [`_projects/`](./_projects/) — organized project sources
-- [`_layouts/`](./_layouts/) — shared page layout
+The homepage is the primary public interface. Hash routes such as `#about`, `#blog`, `#projects`, and `#cv` switch sections without creating duplicate section pages. Articles are written in Markdown and published through Jekyll.
 
-Use the homepage hash tabs (`#about`, `#blog`, `#projects`, `#cv`) for navigation. This keeps the original visual design consistent and prevents duplicate section pages.
+## Local development
 
-Before publishing, personalize the profile text, statistics, social links and CV content, then add `cv.pdf` if you want to publish a downloadable PDF.
+Requirements:
 
-## Publishing
+- Ruby
+- Bundler
+- Jekyll
 
-1. Create a public repository named `kakarotwrites.github.io` under the `kakarotwrites` GitHub account.
-2. Upload the source files from this folder to the repository root.
-3. Do not upload `_site/` or `.jekyll-cache/`; they are generated locally and are ignored by Git.
-4. In **Settings → Pages**, choose **Deploy from a branch**, select the default branch, and choose `/ (root)`.
-5. Wait for the Pages deployment, then check the homepage, writeups, images, `sitemap.xml`, and `robots.txt`.
+Install dependencies and start the development server:
 
-The site includes canonical, Open Graph, Twitter, `Person`, and `WebSite` metadata. Search engines may take time to crawl and index a new site, and no search or image result can be guaranteed. After deployment, submit `https://kakarotwrites.github.io/sitemap.xml` in Google Search Console.
+```bash
+bundle install
+bundle exec jekyll serve --livereload
+```
+
+Open [http://127.0.0.1:4000/](http://127.0.0.1:4000/) in a browser.
+
+Build the site without starting a server:
+
+```bash
+bundle exec jekyll build
+```
+
+Generated files are written to `_site/`. They are not required in the repository and are excluded by `.gitignore`.
+
+## Adding a writeup
+
+Create a Markdown file in `_posts/` using Jekyll's date-based filename format:
+
+```text
+YYYY-MM-DD-short-title.md
+```
+
+Example front matter:
+
+```yaml
+---
+layout: post
+title: "A clear title"
+date: 2026-12-01
+categories: [writeups]
+tags: [web security, research]
+description: "A short description for article previews and search metadata."
+---
+```
+
+Use the `project` tag for project articles. Vulnerability severity labels are reserved for security findings and should not be used for projects.
+
+## Deployment
+
+This site is configured as a GitHub Pages user site at:
+
+```text
+https://kakarotwrites.github.io/
+```
+
+To deploy:
+
+1. Push the source files to the `main` branch of `kakarotWrites/kakarotwrites.github.io`.
+2. Open **Settings → Pages**.
+3. Select **Deploy from a branch**.
+4. Choose `main` and `/ (root)`.
+5. Wait for the Pages deployment to complete.
+
+Do not commit `_site/` or `.jekyll-cache/`; GitHub Pages builds the site from the source files.
+
+## SEO
+
+The site publishes:
+
+- Canonical URLs
+- Open Graph and Twitter metadata
+- `Person` and `WebSite` structured data
+- Profile image metadata
+- `sitemap.xml`
+- `robots.txt`
+
+Search engines control when pages are crawled and which title or description they display. After deployment, submit the sitemap in Google Search Console:
+
+```text
+https://kakarotwrites.github.io/sitemap.xml
+```
+
+## License
+
+The site content, images, CV, and research writeups belong to Rifat Al Jubayer. Contact the author before reusing personal content or published evidence.
